@@ -19,3 +19,8 @@ git remote add origin https://github.com/mufasa159/dash.git
 git branch -M main
 git push -u origin main
 ```
+
+Remove files that was mistakenly added but not yet committed
+```
+git restore --staged <filename>
+```
