@@ -2,18 +2,18 @@
 
 ### Absolute Basics
 
-|Function| How to do |
-|--------------------------|----------------------------------------|
+| Function | How to do |
+|----------|-----------|
 | Zoom in / out | Mouse scroll wheel |
 | Move around object | Press wheel |
 | Move around plane | Shift + Press wheel |
-| Fly around object | Shift + F , Then use W A S D |
+| Fly around object | Shift + F , then use W A S D |
 | New mesh objects | Shift + A |
 
 
 ### Object Mode
 
-|Function| How to do |
+| Function | How to do  |
 |----------|------------|
 | Scale    | S |
 | Rotate | R, then scroll in the direction |  
@@ -28,7 +28,7 @@ Three selection modes:
 2. Line Select (edge Lines)
 3. Face Select (object's surface)
 
-|Function| How to do |
+| Function | How to do  |
 |----------|------------|
 | Extrude  | E |
 | Lock extrude in axis | E, then X / Y / Z |
@@ -42,13 +42,13 @@ Three selection modes:
 Works on keyboard's **Number Pad** (number keys don't work on Mac)
 
 | Function | How to do |
-|--------------------------|----------------------------------------|
+|----------|-----------|
 | Front  | 1 |
 | Right  | 3 |
 | Top    | 7 |
 | Bottom | 9 |
 
-If you do not have mouse pad:
+If you do not have a number pad:
 ```
 Alt + Press Wheel + Scroll in the direction
 ```
