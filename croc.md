@@ -1,28 +1,41 @@
 
 To send a file:  
-```croc send <filepath>```
+```
+croc send <filepath>
+```
   
 To recieve a file:  
-```croc <code-phrase>```  
+```
+croc <code-phrase>
+```  
   
 Send with Custom code phrase:  
-```croc send --code <code-phrase> <filepath>```  
+```
+croc send --code <code-phrase> <filepath>
+```  
   
 Allow overwriting without prompt:  
-```croc --yes --overwrite <code>```  
+```
+croc --yes --overwrite <code>
+```  
   
 
 Using pipes (stdin, stdout):  
-```cat <filename> | croc send```  
-  
-In this case `croc` will automatically use the stdin data and send and assign a filename like "croc-stdin-123456789". To receive to `stdout` at you can always just use the `--yes` will automatically approve the transfer and pipe it out to `stdout`.
+```
+cat <filename> | croc send
 
+// In this case `croc` will automatically use the stdin data and send and assign a filename like "croc-stdin-123456789". To receive to `stdout` at you can always just use the `--yes` will automatically approve the transfer and pipe it out to `stdout`.
+```
   
 Send text:  
-```croc send --text "hello world"```  
+```
+croc send --text "hello world"
+```  
   
 Change encryption curve:  
-```croc --curve p521 <codephrase>```  
+```
+croc --curve p521 <codephrase>
+```  
   
 Self host relay:  
 ```
