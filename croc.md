@@ -24,7 +24,10 @@ Using pipes (stdin, stdout):
 ```
 cat <filename> | croc send
 
-// In this case `croc` will automatically use the stdin data and send and assign a filename like "croc-stdin-123456789". To receive to `stdout` at you can always just use the `--yes` will automatically approve the transfer and pipe it out to `stdout`.
+// In this case `croc` will automatically use the stdin data and send 
+// and assign a filename like "croc-stdin-123456789". To receive to `stdout` 
+// at you can always just use the `--yes` will automatically approve 
+// the transfer and pipe it out to `stdout`.
 ```
   
 Send text:  
