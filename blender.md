@@ -9,6 +9,7 @@
 | Move around plane | Shift + Press wheel |
 | Fly around object | Shift + F , then use W A S D |
 | New mesh objects | Shift + A |
+| Detach multiple object | Object mode, then P |
 
 
 ### Object Mode

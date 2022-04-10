@@ -1,5 +1,3 @@
-# Useful Commands for Mac OS
-
 ## Dot files
 
 To get rid of the dot-underscore files, the most efficient way is using find from the Unix side of things:  
