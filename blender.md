@@ -38,6 +38,7 @@ Three selection modes:
 | Lock grab tool in axis | G, then X / Y / Z |
 | Proportional Editing | O |
 | Cut objects | Ctrl + R, then scroll |
+| Inset | I |
 
 ### Orthographic View
 Works on keyboard's **Number Pad** (number keys don't work on Mac)
@@ -53,3 +54,4 @@ If you do not have a number pad:
 ```
 Alt + Press Wheel + Scroll in the direction
 ```
+Or, press tilde (~) on your keyboard and select a side
