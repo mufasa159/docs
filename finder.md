@@ -17,7 +17,7 @@ find . -name '.DS_Store' -exec rm -v {} \;
 
 Other way to delete dot files:  
 ```
-dot_clean filepath
+dot_clean <filepath>
 ```
 
 Delete ._files on Linux or PC:  
@@ -36,13 +36,13 @@ defaults write com.apple.Finder AppleShowAllFiles true
 
 Make a folder hidden:   
 ```
-chflags hidden filepath
+chflags hidden <filepath>>
 ```  
 Note: you can drag the folder into terminal for its filepath
 
 Make a folder unhidden:  
 ```
-chflags nohidden filepath
+chflags nohidden <filepath>
 ```
 
 Restart Finder:  
