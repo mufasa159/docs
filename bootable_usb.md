@@ -3,7 +3,7 @@
 1. Connect USB drive to machine
 2. Download ISO file  
 3. Open terminal  
-4. Format USB using following command:
+4. Format USB using following commands:
 ```
 diskutil list
 diskutil eraseDisk MS-DOS <name> GPT <disk>
@@ -12,9 +12,9 @@ Example: `diskutil eraseDisk MS-DOS "WIN08" GPT disk3`
 
 5. Mount the ISO file by running the following:
 ```
-hdutil mount <filepath>
+hdiutil mount <filepath>
 ```
-Example: `hdutil mount ~/Downloads/Win8.1_x64.iso`
+Example: `hdiutil mount ~/Downloads/Win8.1_x64.iso`
 
 6. Once mounted the new volume will be displayed in terminal
 7. Copy the content of mounted ISO volume to formatted USB drive by running the following:
