@@ -8,6 +8,10 @@ restic init -r <backup-dir>
 // backup
 restic -r <backup-dir> backup <main-dir>
 
+// backup while excluding files
+restic -r <backup-dir> backup <main-dir> --exclude-file=<exclude-txt-file>
+restic -r <backup-dir> backup <main-dir> --exclude="*.txt"
+
 // check snapshots
 restic -r <backup-dir> snapshots
 
