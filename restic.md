@@ -3,19 +3,33 @@
 **Basic Commands**
 ```
 // initialize
+
 restic init -r <backup-dir>
-
+```
+```
 // backup
-restic -r <backup-dir> backup <main-dir>
 
+restic -r <backup-dir> backup <main-dir>
+```
+```
 // backup while excluding files
+
 restic -r <backup-dir> backup <main-dir> --exclude-file=<exclude-txt-file>
 restic -r <backup-dir> backup <main-dir> --exclude="*.txt"
+```
+```
+// new backup from previous snapshot
 
+restic -r <backup-dir> backup <main-dir> --exclude-file=<exclude-txt-file> --host=<host-from-prev-snapshot>
+```
+```
 // check snapshots
-restic -r <backup-dir> snapshots
 
+restic -r <backup-dir> snapshots
+```
+```
 // restore from snapshot
+
 restic -r <backup-dir> restore <snapshot-id> --target <restore-dir>
 ```
 
