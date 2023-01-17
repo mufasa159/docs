@@ -16,3 +16,11 @@
 |--------------|----------|
 |disable | `sudo nvram AutoBoot=%00` |
 |enable  | `sudo nvram AutoBoot=%03` |
+
+
+
+### Remove drop shadow from screenshots
+```
+defaults write com.apple.screencapture disable-shadow -bool true
+killall SystemUIServer
+```
