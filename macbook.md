@@ -24,3 +24,10 @@
 defaults write com.apple.screencapture disable-shadow -bool true
 killall SystemUIServer
 ```
+
+
+### LaTeX compile
+```
+pdflatex <file>.tex      // pdftex
+latexmk -pdf <file>.tex  // bibtex and others
+```
