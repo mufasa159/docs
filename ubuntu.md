@@ -48,9 +48,9 @@ psql postgres                                                // login to postgre
 Exit psql shell using `\q` followed by `Enter`.
 
 **From a Linode [article](https://www.linode.com/docs/guides/how-to-install-use-postgresql-ubuntu-20-04/):**  
-"By default, PostgreSQL grants access to local system users without requiring a password. This is known as peer authentication. PostgreSQL obtains the system name of the user and verifies it against the database privileges. To enforce password authentication from local users, you must edit the pg_hba.conf file. Run the following command within the psql shell to determine the location of this file."
+"By default, PostgreSQL grants access to local system users without requiring a password. This is known as peer authentication. PostgreSQL obtains the system name of the user and verifies it against the database privileges. To enforce password authentication from local users, you must edit the `pg_hba.conf` file. Run the following command within the psql shell to determine the location of this file."
 ```
-SHOW hba_file;                 // see where hba file is located
+psql -c "SHOW hba_file;"       // see where hba file is located
 \q                             // exit psql shell
 sudo nano <file-location>      // open file to edit
 ```
@@ -64,6 +64,18 @@ Then restart postgres server using:
 ```
 sudo systemctl restart postgresql.service
 ```
+Now that you have postgres set up, you can use the following commands to work with database:
+```
+psql -U postgres -W            // enter postgres shell
+CREATE DATABASE testdb         // create a database 
+\l                             // list all databases
+```
+If you prefer GUI, install Tableplus or similar data managemment software.
+
+### Tableplus
+Used for managing SQL database. Very convenient and simple to use. Makes it easier to interact with database content. To install, check the official installation instruction for Ubuntu [here](https://tableplus.com/blog/2019/10/tableplus-linux-installation.html).
+
+
 ### VS Code
 Download the `.deb` file from VS Code [website](https://code.visualstudio.com/Download) and open it using Ubuntu "Software".
 
