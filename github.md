@@ -24,3 +24,8 @@ Remove files that was mistakenly added but not yet committed
 ```
 git restore --staged <filename>
 ```
+
+Undo last git commit
+```
+git reset --soft HEAD~1
+```
