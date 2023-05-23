@@ -47,20 +47,20 @@ psql postgres                                                // login to postgre
 ```
 Exit psql shell using `\q` followed by `Enter`.
 
-**From a Linode [article](https://www.linode.com/docs/guides/how-to-install-use-postgresql-ubuntu-20-04/):**  
-"By default, PostgreSQL grants access to local system users without requiring a password. This is known as peer authentication. PostgreSQL obtains the system name of the user and verifies it against the database privileges. To enforce password authentication from local users, you must edit the `pg_hba.conf` file. Run the following command within the psql shell to determine the location of this file."
+**From a Linode [article](https://www.linode.com/docs/guides/how-to-install-use-postgresql-ubuntu-20-04/)**  
+> By default, PostgreSQL grants access to local system users without requiring a password. This is known as peer authentication. PostgreSQL obtains the system name of the user and verifies it against the database privileges. To enforce password authentication from local users, you must edit the `pg_hba.conf` file. Run the following command within the psql shell to determine the location of this file.
 ```
 psql -c "SHOW hba_file;"       // see where hba file is located
 \q                             // exit psql shell
 sudo nano <file-location>      // open file to edit
 ```
-Edit the pg_hba.conf file to enforce authentication. Find the local line under “Unix domain socket connections only” and change the `METHOD` attribute from `peer` to `md5`.
+> Edit the pg_hba.conf file to enforce authentication. Find the local line under “Unix domain socket connections only” and change the `METHOD` attribute from `peer` to `md5`.
 It should look like the following:
 ```
 # "local" is for Unix domain socket connections only
 local   all             all                                     md5
 ```
-Then restart postgres server using:
+> Then restart postgres server using:
 ```
 sudo systemctl restart postgresql.service
 ```
@@ -78,4 +78,10 @@ Used for managing SQL database. Very convenient and simple to use. Makes it easi
 
 ### VS Code
 Download the `.deb` file from VS Code [website](https://code.visualstudio.com/Download) and open it using Ubuntu "Software".
+
+### Croc
+Croc is used for sharing files between machines. Kind of like Airdrop. To install, run the following command:
+```
+curl https://getcroc.schollz.com | bash
+```
 
