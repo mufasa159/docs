@@ -17,6 +17,7 @@
 - [ ] Stencil gel - _for applying artwork_
 - [ ] Ink caps - _for pouring ink_
 - [ ] Numbing cream - _for sensitive areas_
+- [ ] Vaseline - _for cleaning ink_
 
 ### Aftercare
 - [ ] Antibiotic ointment - _apply after done tattooing_
