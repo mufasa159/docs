@@ -1,4 +1,4 @@
-## Tattoo Equipments Checklist
+## Tattoo Equipment Checklist
   
 ### Tatto Gun Kit  
 - [ ] Tatto Gun  
