@@ -95,6 +95,26 @@ Or, specify in each commit like following
 git commit -S -m"your-commit-message"
 ```
 
+### Troubleshooting
+
+When running this:
+```bash
+git log --show-signature
+```
+Do you see this?
+```bash
+error: gpg.ssh.allowedSignersFile needs to be configured and exist for ssh signature verification
+...
+No signature
+```
+If so, do this:
+```bash
+touch ~/.ssh/allowed_signers
+echo "$(git config --get user.email) namespaces=\"git\" $(cat ~/.ssh/id_ed25519.pub)" >> ~/.ssh/allowed_signers
+git config --global gpg.ssh.allowedSignersFile ~/.ssh/allowed_signers
+```
+
+
 More details:  
 [Generating a new SSH key and adding it to the ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)  
 [Telling Git about your signing key](https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key)  
