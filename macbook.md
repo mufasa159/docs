@@ -31,3 +31,23 @@ killall SystemUIServer
 pdflatex <file>.tex      // pdftex
 latexmk -pdf <file>.tex  // bibtex and others
 ```
+
+
+### Remove local snapshots to free up space
+```
+tmutil listlocalsnapshots /
+```
+
+It should list all local snapshots like the following:
+
+```
+com.apple.TimeMachine.2017-12-14-173102
+com.apple.TimeMachine.2017-12-14-212356
+```
+
+To delete all local snapshots, run the following command:
+
+```
+sudo tmutil deletelocalsnapshots 2017-12-14-173102
+sudo tmutil deletelocalsnapshots 2017-12-14-212356
+```
