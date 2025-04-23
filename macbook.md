@@ -51,3 +51,9 @@ To delete all local snapshots, run the following command:
 sudo tmutil deletelocalsnapshots 2017-12-14-173102
 sudo tmutil deletelocalsnapshots 2017-12-14-212356
 ```
+
+### Customize screenshot name
+
+```shell
+defaults write com.apple.screencapture name "screenshot_$(date +%Y%m%d-%H%M%S)" && killall SystemUIServer
+```
